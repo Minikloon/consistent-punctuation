@@ -3,7 +3,7 @@
 ![email alert](http://i.imgur.com/ekpyN05.png)
 
 This is a simple service intended to be used as a Github webhook. 
-It will send an email if a commit is pushed with inconsistent punctuation.
+It will send an email if a commit is pushed with punctuation inconsistent with previous commits.
 
 * Hosting on https://webtask.io
 * Emails by https://www.mailgun.com
@@ -17,11 +17,11 @@ Create a webhook on Github on your favorite repository.
 
 ![where are webhooks](http://i.imgur.com/Q7TYmaJ.png)
 
-Fill in the **Payload URL** field with this webhook:
+After clicking the button in the above screenshot, fill in the **Payload URL** field with this webhook:
 
 `https://<span></span>wt-d878134b7b657e0e65e15239acb0466e-0.run.webtask.io/consistent-punctuation?mailto=YOUR_EMAIL`
 
-Make sure to replace YOUR_EMAIL in the link.
+Make sure to replace YOUR_EMAIL in the link. Leave the other fields on the form as default.
 
 **Step 2**
 
